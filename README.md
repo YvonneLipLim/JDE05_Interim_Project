@@ -27,5 +27,5 @@ Yvonne's Findings 19/11/2024:
 
 ### What Are The Recommendations?
 Yvonne's Suggestions 19/11/2024:
-1. Carefully consider the project requirements and choose the APIs that best meet our needs given the challenge on the API source _https://www.freecodecamp.org/news/public-apis-for-developers/_ so that we could focus more time on the database schema, remodify the Python scripts to apply SQL and create presentation deck.
+1. Carefully consider the project requirements and choose the APIs that best meet our needs given the challenge on the API source so that we can focus more time on the database schema, remodify the Python scripts to apply SQL and create the presentation deck. _https://www.freecodecamp.org/news/public-apis-for-developers/_
 
