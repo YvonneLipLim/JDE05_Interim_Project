@@ -27,5 +27,5 @@ Yvonne's Findings 19/11/2024:
 
 ### What Are The Recommendations?
 Yvonne's Suggestions 19/11/2024:
-1. Drop the original plan and select a much more appropriate open-source API to deliver the project given the challenge.
+1. Carefully consider the project requirements and choose the APIs that best meet our needs given the challenge on the API source _https://www.freecodecamp.org/news/public-apis-for-developers/_ so that we could focus more time on the database schema, remodify the Python scripts to apply SQL and create presentation deck.
 
