@@ -1,14 +1,17 @@
 CREATE TABLE locations (
 town_id INTEGER PRIMARY KEY,
-town_name VARCHAR(20),
+town_name VARCHAR(20) UNIQUE,
 region VARCHAR(10),
-station_id VARCHAR(4));
+station_id VARCHAR(4),
+FOREIGN KEY (station_id) REFERENCES station(station_id)
+);
 
 CREATE TABLE air_temp (
 airtemp_id SERIAL PRIMARY KEY,
 station_id VARCHAR(4),
 temperature DECIMAL(3,1),
-airtemp_date TIMESTAMP
+airtemp_date TIMESTAMP,
+FOREIGN KEY (station_id) REFERENCES station(station_id)
 );
 
 CREATE TABLE resale_flat_txn (
@@ -23,7 +26,8 @@ floor_area_sqm INTEGER,
 flat_model VARCHAR(30),
 lease_commence_year INTEGER,
 remaining_lease	VARCHAR(20),
-resale_price INTEGER);
+resale_price INTEGER,
+FOREIGN KEY (town_name) REFERENCES locations(town_name));
 
 CREATE TABLE station (
 station_id VARCHAR(4) PRIMARY KEY,
@@ -36,8 +40,10 @@ CREATE TABLE humidity (
 humidity_id SERIAL PRIMARY KEY,
 station_id VARCHAR(4),
 humidity_date TIMESTAMP,
-humidity_readings DECIMAL(3,1)
+humidity_readings DECIMAL(3,1),
+FOREIGN KEY (station_id) REFERENCES station(station_id)
 );
+
 
 INSERT INTO locations VALUES (1, 'ANG MO KIO', 'North', 'S109');
 INSERT INTO locations VALUES (2, 'BEDOK', 'East', 'S107');
@@ -79,3 +85,5 @@ INSERT INTO Station VALUES ('S60','Sentosa','S60',1.25,103.8279);
 INSERT INTO Station VALUES ('S24','Upper Changi Road North','S24',1.3678,103.9826);
 INSERT INTO Station VALUES ('S116','West Coast Highway','S116',1.281,103.754);
 INSERT INTO Station VALUES ('S104','Woodlands Avenue 9','S104',1.44387,103.78538);
+INSERT INTO Station VALUES ('S102','Semakau Landfill','S102',1.20525,103.77117);
+INSERT INTO Station VALUES ('S115','Tuas South Avenue 3','S115',1.29377,103.68166);
