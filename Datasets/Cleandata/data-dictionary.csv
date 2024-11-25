@@ -24,3 +24,7 @@ resale_flat_txn,lease_commence_year,lease commence year,int4,NULL,integer
 resale_flat_txn,remaining_lease,remaining lease (years and months),varchar,20,character varying
 resale_flat_txn,resale_price,pricing of resale flat,int4,NULL,integer
 station,station_id,id for weather station,varchar,4,character varying
+station,station_name,name of weather station,varchar,30,character varying
+station,device_id,device id of weather station,varchar,4,character varying
+station,latitude,latitude of weather station,numeric,NULL,numeric
+station,longitude,longitude of weather station,numeric,NULL,numeric
