@@ -87,3 +87,4 @@ INSERT INTO Station VALUES ('S116','West Coast Highway','S116',1.281,103.754);
 INSERT INTO Station VALUES ('S104','Woodlands Avenue 9','S104',1.44387,103.78538);
 INSERT INTO Station VALUES ('S102','Semakau Landfill','S102',1.20525,103.77117);
 INSERT INTO Station VALUES ('S115','Tuas South Avenue 3','S115',1.29377,103.68166);
+INSERT INTO Station VALUES ('S106','Pulau Ubin','S106',1.412382,103.958509);
