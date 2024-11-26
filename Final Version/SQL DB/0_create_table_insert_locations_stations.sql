@@ -22,11 +22,11 @@ flat_type VARCHAR(20),
 block_no VARCHAR(5),
 street_name VARCHAR(30),
 storey_range VARCHAR(10),
-floor_area_sqm INTEGER,
+floor_area_sqm FLOAT,
 flat_model VARCHAR(30),
 lease_commence_year INTEGER,
 remaining_lease	VARCHAR(20),
-resale_price INTEGER,
+resale_price FLOAT,
 FOREIGN KEY (town_name) REFERENCES locations(town_name));
 
 CREATE TABLE station (
