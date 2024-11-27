@@ -47,7 +47,7 @@ FOREIGN KEY (station_id) REFERENCES station(station_id)
 
 INSERT INTO locations VALUES (1, 'ANG MO KIO', 'North', 'S109');
 INSERT INTO locations VALUES (2, 'BEDOK', 'East', 'S107');
-INSERT INTO locations VALUES (3, 'BISHAN', 'Central', 'S43');
+INSERT INTO locations VALUES (3, 'BISHAN', 'Central', 'S109');
 INSERT INTO locations VALUES (4, 'BUKIT BATOK', 'West', 'S121');
 INSERT INTO locations VALUES (5, 'BUKIT MERAH', 'Central', 'S60');
 INSERT INTO locations VALUES (6, 'BUKIT PANJANG', 'West', 'S121');
@@ -62,10 +62,10 @@ INSERT INTO locations VALUES (14, 'JURONG WEST', 'West', 'S44');
 INSERT INTO locations VALUES (15, 'KALLANG/WHAMPOA', 'Central', 'S108');
 INSERT INTO locations VALUES (16, 'MARINE PARADE', 'Central', 'S108');
 INSERT INTO locations VALUES (17, 'PASIR RIS', 'East', 'S24');
-INSERT INTO locations VALUES (18, 'PUNGGOL', 'North', 'S24');
+INSERT INTO locations VALUES (18, 'PUNGGOL', 'North', 'S43');
 INSERT INTO locations VALUES (19, 'QUEENSTOWN', 'Central', 'S116');
 INSERT INTO locations VALUES (20, 'SEMBAWANG', 'North', 'S104');
-INSERT INTO locations VALUES (21, 'SENGKANG', 'North', 'S109');
+INSERT INTO locations VALUES (21, 'SENGKANG', 'North', 'S43');
 INSERT INTO locations VALUES (22, 'SERANGOON', 'North', 'S43');
 INSERT INTO locations VALUES (23, 'TAMPINES', 'East', 'S24');
 INSERT INTO locations VALUES (24, 'TOA PAYOH', 'Central', 'S43');
