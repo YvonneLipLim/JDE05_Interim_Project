@@ -1,7 +1,5 @@
 CREATE TABLE locations (
-town_id INTEGER PRIMARY KEY,
-town_name VARCHAR(20) UNIQUE,
-region VARCHAR(10),
+town_name VARCHAR(20) PRIMARY KEY,
 station_id VARCHAR(4),
 FOREIGN KEY (station_id) REFERENCES station(station_id)
 );
@@ -32,7 +30,6 @@ FOREIGN KEY (town_name) REFERENCES locations(town_name));
 CREATE TABLE station (
 station_id VARCHAR(4) PRIMARY KEY,
 station_name VARCHAR(30),
-device_id VARCHAR(4),
 latitude DECIMAL,
 longitude DECIMAL);
 
